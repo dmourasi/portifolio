@@ -1,13 +1,13 @@
 
 
-const Home = () => {
+const Hero = () => {
 
     return (
       <>
-        <Hero />
+        Hero
       </>
     )
   }
   
-  export default Home
+  export default Hero
   
