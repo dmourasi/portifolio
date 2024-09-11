@@ -1,5 +1,5 @@
 import { Box, Container, Grid2, styled, Typography} from "@mui/material";
-import Avatar from "../../../../assets/imagens/avatar.jpg";
+import Avatar from "../../../../assets/imagens/avatar.png";
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../compoents/StyledButton/StyledButton";
@@ -29,44 +29,57 @@ const Hero = () => {
 
     return (
       <StyledHero>
-        <Container maxWidth="lg">
-          <Grid2 container spacing={2}>
-            <Grid2 size={{xs:12, md:5}}>
-              <Box position="relative">
-                <Box position="absolute" width={"150%"} top={-100} right={0}>
-                  <AnimatedBackground />
-                </Box>
-                <Box position="relative" textAlign="center">
-                  <StyledImg src={Avatar} />
-                </Box>
-              </Box>
-                          </Grid2>
-            <Grid2 size={{xs:12, md:7}}>
-              <Typography color="primary.contrastText" variant="h1" textAlign="center">Daniel Moura</Typography>
-              <Typography color="primary.contrastText" variant="h2" textAlign="center">I'am a Data Scientist</Typography>
-              <Grid2 container  display="flex" justifyContent="center" spacing={3}>
-                <Grid2 size={{xs:16, md:4}} display="flex" justifyContent="center">
-                  <StyledButton onClick={()=> console.log("download")}>
-                  <FileDownloadIcon />
-                  <Typography>
-                     Download CV
+        <Box
+          sx={{
+            position: "relative",
+            width: "100vw",
+            height: "100vh",
+            backgroundImage: `url(${Avatar})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <Container maxWidth="lg" sx={{ height: "100%" }}>
+            <Grid2 container spacing={2} sx={{ height: "100%" }}>
+              <Grid2
+                size={{ xs: 12, md: 7 }}
+                display="flex"
+                justifyContent="flex-start"
+                alignItems="center"
+              >
+                <Box>
+                  <Typography color="primary.contrastText" variant="h4" textAlign="left">
+                    M.Sc.Daniel
                   </Typography>
-                  </StyledButton>
-                </Grid2>
-                <Grid2 size={{xs:16, md:4}} display="flex" justifyContent="center">
-                  <StyledButton onClick={()=> console.log("contat")}>
-                  <MailOutlineIcon />
-                  <Typography>
-                    Contat me
+                  <Typography color="primary.contrastText" variant="h1" textAlign="left">
+                    Moura
                   </Typography>
-                  </StyledButton>
-                </Grid2>
-              </Grid2>            
+                  <Typography color="primary.contrastText" variant="h5" textAlign="left">
+                    Data Scientist
+                  </Typography>
+                  <Grid2 container display="flex" justifyContent="flex-start" spacing={3} mt={2}>
+                    <Grid2 size={{ xs: 16, md: 4 }} display="flex" justifyContent="center">
+                      <StyledButton onClick={() => console.log("download")}>
+                        <FileDownloadIcon />
+                        <Typography>Download CV</Typography>
+                      </StyledButton>
+                    </Grid2>
+                    <Grid2 size={{ xs: 16, md: 4 }} display="flex" justifyContent="center">
+                      <StyledButton onClick={() => console.log("contact")}>
+                        <MailOutlineIcon />
+                        <Typography>Contact me</Typography>
+                      </StyledButton>
+                    </Grid2>
+                  </Grid2>
+                </Box>
+              </Grid2>
             </Grid2>
-          </Grid2>
-        </Container>
+          </Container>
+        </Box>
       </StyledHero>
     );
+    
 };
 
 export default Hero;
