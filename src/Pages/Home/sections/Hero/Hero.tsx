@@ -49,23 +49,23 @@ const Hero = () => {
                 alignItems="center"
               >
                 <Box>
-                  <Typography color="primary.contrastText" variant="h4" textAlign="left">
-                    M.Sc.Daniel
+                  <Typography color="primary.contrastText" variant="h4" textAlign="left" sx={{ fontFamily: 'Nexa'}}>
+                    M.Sc. Daniel
                   </Typography>
-                  <Typography color="primary.contrastText" variant="h1" textAlign="left">
+                  <Typography color="primary.contrastText" variant="h1" textAlign="left" fontWeight="bold" sx={{ fontFamily: 'Avenir Next'}}>
                     Moura
                   </Typography>
-                  <Typography color="primary.contrastText" variant="h5" textAlign="left">
-                    Data Scientist
+                  <Typography color="primary.contrastText" variant="h6" textAlign="left">
+                    Data Scientist and Bioinformatician
                   </Typography>
-                  <Grid2 container display="flex" justifyContent="flex-start" spacing={3} mt={2}>
-                    <Grid2 size={{ xs: 16, md: 4 }} display="flex" justifyContent="center">
+                  <Grid2 container display="flex" justifyContent="flex-start" spacing={1} mt={1}>
+                    <Grid2 size={{ xs: 16, md: 4 }} display="contents" justifyContent="right">
                       <StyledButton onClick={() => console.log("download")}>
                         <FileDownloadIcon />
                         <Typography>Download CV</Typography>
                       </StyledButton>
                     </Grid2>
-                    <Grid2 size={{ xs: 16, md: 4 }} display="flex" justifyContent="center">
+                    <Grid2 size={{ xs: 16, md: 4 }} display="contents" justifyContent="left">
                       <StyledButton onClick={() => console.log("contact")}>
                         <MailOutlineIcon />
                         <Typography>Contact me</Typography>

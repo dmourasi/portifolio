@@ -13,14 +13,15 @@ const StyledButton: React.FC<StyledButtonProps>= ({ children, onClick }) => {
          border: `1px solid ${theme.palette.primary.contrastText}`,
         borderRadius: "3px",
         padding: "5 px 15px",
-        width: "100%",
+        width: "150%",
         color: theme.palette.primary.contrastText,
         display: "inline-flex",
         alignItems: "center",
         justifyContent: "center",
         gap: "10px",
+        cursor: "pointer", 
         '&:hover': {
-            backgroudColor: theme.palette.secondary.light
+          backgroundColor: theme.palette.secondary.light, 
         }
     }));
 
