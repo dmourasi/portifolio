@@ -1,5 +1,5 @@
 import { Box, Container, Grid2, styled, Typography} from "@mui/material";
-import Avatar from "../../../../assets/imagens/avatar.png";
+import Avatar from "../../../../assets/imagens/avatar.jpg";
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../compoents/StyledButton/StyledButton";
@@ -41,7 +41,7 @@ const Hero = () => {
           }}
         >
           <Container maxWidth="lg" sx={{ height: "100%" }}>
-            <Grid2 container spacing={2} sx={{ height: "100%" }}>
+            <Grid2 container spacing={2} sx={{ height: "90%" }}>
               <Grid2
                 size={{ xs: 12, md: 7 }}
                 display="flex"
@@ -49,9 +49,14 @@ const Hero = () => {
                 alignItems="center"
               >
                 <Box>
-                  <Typography color="primary.contrastText" variant="h4" textAlign="left" sx={{ fontFamily: 'Nexa'}}>
-                    M.Sc. Daniel
+                <Box sx={{ display: 'flex', alignItems: 'baseline' }}>
+                  <Typography color="primary.contrastText" variant="h6" textAlign="left" sx={{ fontFamily: 'Nexa'}}>
+                    M.Sc.
                   </Typography>
+                  <Typography color="primary.contrastText" variant="h4" textAlign="left" sx={{ fontFamily: 'Nexa'}}>
+                    Daniel
+                  </Typography>
+                </Box>
                   <Typography color="primary.contrastText" variant="h1" textAlign="left" fontWeight="bold" sx={{ fontFamily: 'Avenir Next'}}>
                     Moura
                   </Typography>
