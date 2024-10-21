@@ -47,16 +47,17 @@ const Projects = () => {
           color="primary.contrastText"
           sx={{ fontFamily: 'Nexa', textAlign: 'center', marginBottom: '40px' }}
         >
-          Projects
+          Recents Projects
         </Typography>
 
         <Grid2 container spacing={4}>
           {/* Cartão de Projeto 1 */}
           <Grid2 size={{ xs: 12, md: 6 }}>
             <ProjectCard>
-              <ProjectTitle>Project 1: Data Analysis Tool</ProjectTitle>
+              <ProjectTitle> Main Project: Risk Assessment of Physical, Chemical, and Biological Factors in the Flow of the Capibaribe River Through Multivariate Analyses </ProjectTitle>
               <ProjectDescription>
-                A robust data analysis tool built using Python and R to process and visualize genomic data for bioinformatics research.
+              This study aims to assess the risk associated with physical, chemical, and biological factors in the flow of the Capibaribe River using multivariate analyses. By examining water samples and modeling sediment transport and deposition along different points of the river, the research investigates pollutant accumulation, sediment dynamics, and microbial communities. The focus is on understanding how sediment characteristics influence the distribution of contaminants and their ecological impacts. The goal is to identify areas with high environmental and human health risks, providing insights for better management and conservation strategies, particularly in regions affected by industrial pollution and seasonal changes in sediment flow.
+              Research conducted in partnership with the Federal Rural University of Pernambuco (UFRPE).
               </ProjectDescription>
               <Button 
                 variant="contained" 
@@ -72,9 +73,10 @@ const Projects = () => {
           {/* Cartão de Projeto 2 */}
           <Grid2 size={{ xs: 12, md: 6 }}>
             <ProjectCard>
-              <ProjectTitle>Project 2: Web App for Environmental Risk</ProjectTitle>
+              <ProjectTitle>Side Project: Impact of Sleep Patterns, Mood, Light Exposure, and Physical Activity during the COVID-19 Pandemic Isolation</ProjectTitle>
               <ProjectDescription>
-                A React and Node.js based web application that tracks environmental risk factors across river ecosystems using real-time data.
+              This project investigates the changes in sleep patterns among college students during the isolation period of the COVID-19 pandemic, focusing on the relationship between sleep, mood, physical activity, and light exposure. Through a comparative analysis of two phases of the pandemic, the study explores how students' sleep habits evolved, becoming more morning-oriented by the second year. The research also examines how shifts in sleep schedules are associated with mood variations, daily sunlight exposure, and exercise levels. By understanding these dynamics, the study aims to offer insights into the broader impacts of lifestyle changes prompted by the pandemic’s isolation on students' well-being.
+              Research conducted in partnership with the Federal University of Pernambuco (UFPE).
               </ProjectDescription>
               <Button 
                 variant="contained" 
@@ -90,9 +92,10 @@ const Projects = () => {
           {/* Cartão de Projeto 3 */}
           <Grid2 size={{ xs: 12, md: 6 }}>
             <ProjectCard>
-              <ProjectTitle>Project 3: Bioinformatics Pipeline</ProjectTitle>
+              <ProjectTitle> Side Project: Trend Analysis of Rainfall Patterns in the Mesoregions of Pernambuco and Paraíba, Brazil </ProjectTitle>
               <ProjectDescription>
-                Developed a bioinformatics pipeline using Perl and SQL for automated analysis of large-scale sequencing data.
+              This project analyzes rainfall trends on annual, seasonal, and monthly scales in the mesoregions of Pernambuco and Paraíba. Based on precipitation data collected from 1995 to 2020 by meteorological stations, the study applies the Mann-Kendall test to detect trends and Sen’s slope estimator to determine trend magnitudes.
+              Research conducted in partnership with the Federal Rural University of Pernambuco (UFRPE).
               </ProjectDescription>
               <Button 
                 variant="contained" 
@@ -108,9 +111,10 @@ const Projects = () => {
           {/* Cartão de Projeto 4 */}
           <Grid2 size={{ xs: 12, md: 6 }}>
             <ProjectCard>
-              <ProjectTitle>Project 4: Machine Learning in Genomics</ProjectTitle>
+              <ProjectTitle>Side Project: Correlation Between Osteosarcopenia and Inflammatory Mediators in Patients: Exploring Pro- and Anti-Inflammatory Biomarkers </ProjectTitle>
               <ProjectDescription>
-                A machine learning project to predict genetic mutations using TensorFlow and Keras, applied to cancer research.
+              This study explores the association between osteosarcopenia and the balance of pro- and anti-inflammatory mediators in patients. It investigates how elevated pro-inflammatory and reduced anti-inflammatory biomarkers may contribute to the development of osteosarcopenia. The findings aim to enhance understanding of the inflammatory pathways involved, potentially guiding future therapeutic strategies for managing inflammation in affected individuals.
+              Research conducted in partnership with the Jundiaí Medical School.
               </ProjectDescription>
               <Button 
                 variant="contained" 
