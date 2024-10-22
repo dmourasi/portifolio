@@ -46,13 +46,13 @@ const Skills = () => {
           Skills
         </Typography>
 
-        <Grid2 container spacing={4}>
+        <Grid2 container spacing={4} display="flex" flexDirection="column" alignItems="center">
           {/* Habilidades técnicas */}
-          <Grid2 size={{ xs: 12, md: 6 }}>
-            <Typography variant="h4" color="primary.contrastText" gutterBottom sx={{ fontFamily: 'Nexa', marginBottom: '16px' }}>
+          <Grid2 size={{ xs: 12, md: 6 }} display="flex" flexDirection="column" alignItems="center">
+            <Typography variant="h4" color="primary.contrastText" gutterBottom sx={{ fontFamily: 'Nexa', marginBottom: '16px', textAlign: 'center', fontSize: '28px' }}>
               Technical Skills
             </Typography>
-            <Grid2 container spacing={3}>
+            <Grid2 container spacing={3} justifyContent="center">
               <Grid2 size={{ xs: 12, sm: 6 }}>
                 <SkillBox>Python</SkillBox>
               </Grid2>
@@ -66,31 +66,38 @@ const Skills = () => {
                 <SkillBox>SQL</SkillBox>
               </Grid2>
               <Grid2 size={{ xs: 12, sm: 6 }}>
-                <SkillBox>Bioinformatics</SkillBox>
+                <SkillBox>Linux</SkillBox>
+              </Grid2>
+              <Grid2 size={{ xs: 12, sm: 6 }}>
+                <SkillBox>Machine Learning</SkillBox>
               </Grid2>
             </Grid2>
           </Grid2>
-
-          {/* Habilidades interpessoais */}
-          <Grid2 size={{ xs: 12, md: 6 }}>
-            <Typography variant="h4" color="primary.contrastText" gutterBottom sx={{ fontFamily: 'Nexa', marginBottom: '16px' }}>
-              Interpersonal Skills
+        </Grid2>
+        <Grid2 container spacing={4} display="flex" flexDirection="column" alignItems="center">
+          {/* Tópicos de conhecimento */}
+          <Grid2 size={{ xs: 12, md: 6 }} display="flex" flexDirection="column" alignItems="center">
+            <Typography variant="h4" color="primary.contrastText" gutterBottom sx={{ fontFamily: 'Nexa', marginBottom: '16px', textAlign: 'center', fontSize: '20px' }}>
+              Expertise Topics
             </Typography>
-            <Grid2 container spacing={3}>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
-                <SkillBox>Communication</SkillBox>
+            <Grid2 container spacing={2} justifyContent="center">
+            <Grid2 size={{ xs: 8, sm: 4 }}>
+                <SkillBox>Biostatistics</SkillBox>
               </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
-                <SkillBox>Teamwork</SkillBox>
+              <Grid2 size={{ xs: 8, sm: 4 }}>
+                <SkillBox>Computacional Biology</SkillBox>
               </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
-                <SkillBox>Problem Solving</SkillBox>
+              <Grid2 size={{ xs: 8, sm: 4 }}>
+                <SkillBox>Physiology and Behavior</SkillBox>
               </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
-                <SkillBox>Adaptability</SkillBox>
+              <Grid2 size={{ xs: 8, sm: 4 }}>
+                <SkillBox>Microbiology</SkillBox>
               </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
-                <SkillBox>Critical Thinking</SkillBox>
+              <Grid2 size={{ xs: 8, sm: 4 }}>
+                <SkillBox>Environmetal Science</SkillBox>
+              </Grid2>
+              <Grid2 size={{ xs: 8, sm: 4 }}>
+                <SkillBox>Forensic Biology</SkillBox>
               </Grid2>
             </Grid2>
           </Grid2>

@@ -73,21 +73,33 @@ const Projects = () => {
           {/* Cartão de Projeto 2 */}
           <Grid2 size={{ xs: 12, md: 6 }}>
             <ProjectCard>
-              <ProjectTitle>Side Project: Impact of Sleep Patterns, Mood, Light Exposure, and Physical Activity during the COVID-19 Pandemic Isolation</ProjectTitle>
+              <ProjectTitle>
+                Side Project: Impact of Sleep Patterns, Mood, Light Exposure, and Physical Activity during the COVID-19 Pandemic Isolation
+              </ProjectTitle>
               <ProjectDescription>
-              This project investigates the changes in sleep patterns among college students during the isolation period of the COVID-19 pandemic, focusing on the relationship between sleep, mood, physical activity, and light exposure. Through a comparative analysis of two phases of the pandemic, the study explores how students' sleep habits evolved, becoming more morning-oriented by the second year. The research also examines how shifts in sleep schedules are associated with mood variations, daily sunlight exposure, and exercise levels. By understanding these dynamics, the study aims to offer insights into the broader impacts of lifestyle changes prompted by the pandemic’s isolation on students' well-being.
-              Research conducted in partnership with the Federal University of Pernambuco (UFPE).
+                This project investigates the changes in sleep patterns among college students during the isolation period of the COVID-19 pandemic, focusing on the relationship between sleep, mood, physical activity, and light exposure. Through a comparative analysis of two phases of the pandemic, the study explores how students' sleep habits evolved, becoming more morning-oriented by the second year. The research also examines how shifts in sleep schedules are associated with mood variations, daily sunlight exposure, and exercise levels. By understanding these dynamics, the study aims to offer insights into the broader impacts of lifestyle changes prompted by the pandemic’s isolation on students' well-being.
+                Research conducted in partnership with the Federal University of Pernambuco (UFPE).
               </ProjectDescription>
-              <Button 
-                variant="contained" 
-                color="secondary" 
-                sx={{ marginTop: "10px" }}
-                onClick={() => console.log("View Project 2")}
+              <Button
+                variant="contained"
+                color="secondary"
+                sx={{ marginTop: "10px", marginRight: "10px" }}
+                onClick={() => window.open("https://www.tandfonline.com/doi/full/10.1080/13548506.2022.2159457", "_blank")}
               >
-                View More
+                Paper 1
+              </Button>
+              <Button
+                variant="contained"
+                color="secondary"
+                sx={{ marginTop: "10px" }}
+                onClick={() => window.open("https://www.tandfonline.com/doi/abs/10.1080/09291016.2023.2206125", "_blank")}
+              >
+                Paper 2
               </Button>
             </ProjectCard>
           </Grid2>
+
+
 
           {/* Cartão de Projeto 3 */}
           <Grid2 size={{ xs: 12, md: 6 }}>
@@ -114,7 +126,7 @@ const Projects = () => {
               <ProjectTitle>Side Project: Correlation Between Osteosarcopenia and Inflammatory Mediators in Patients: Exploring Pro- and Anti-Inflammatory Biomarkers </ProjectTitle>
               <ProjectDescription>
               This study explores the association between osteosarcopenia and the balance of pro- and anti-inflammatory mediators in patients. It investigates how elevated pro-inflammatory and reduced anti-inflammatory biomarkers may contribute to the development of osteosarcopenia. The findings aim to enhance understanding of the inflammatory pathways involved, potentially guiding future therapeutic strategies for managing inflammation in affected individuals.
-              Research conducted in partnership with the Jundiaí Medical School.
+              Research conducted in partnership with the Jundiaí Medical School (FMJ).
               </ProjectDescription>
               <Button 
                 variant="contained" 

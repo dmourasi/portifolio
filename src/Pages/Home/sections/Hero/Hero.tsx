@@ -4,6 +4,7 @@ import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../compoents/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../compoents/AnimatedBackgroud/AnimatedBackgound";
+import CV from './Daniel_CV_EN.pdf';
 
 const Hero = () => {
 
@@ -14,7 +15,6 @@ const Hero = () => {
         alignItems: "center",
         [theme.breakpoints.up('xs')]: { 
           paddingTop: "100px"
-
         },
         [theme.breakpoints.up('md')]:{
           paddingTop: "0"
@@ -49,14 +49,14 @@ const Hero = () => {
                 alignItems="center"
               >
                 <Box>
-                <Box sx={{ display: 'flex', alignItems: 'baseline' }}>
-                  <Typography color="primary.contrastText" variant="h6" textAlign="left" sx={{ fontFamily: 'Nexa'}}>
-                    M.Sc.
-                  </Typography>
-                  <Typography color="primary.contrastText" variant="h4" textAlign="left" sx={{ fontFamily: 'Nexa'}}>
-                    Daniel
-                  </Typography>
-                </Box>
+                  <Box sx={{ display: 'flex', alignItems: 'baseline' }}>
+                    <Typography color="primary.contrastText" variant="h6" textAlign="left" sx={{ fontFamily: 'Nexa'}}>
+                      M.Sc.
+                    </Typography>
+                    <Typography color="primary.contrastText" variant="h4" textAlign="left" sx={{ fontFamily: 'Nexa'}}>
+                      Daniel
+                    </Typography>
+                  </Box>
                   <Typography color="primary.contrastText" variant="h1" textAlign="left" fontWeight="bold" sx={{ fontFamily: 'Avenir Next'}}>
                     Moura
                   </Typography>
@@ -65,7 +65,9 @@ const Hero = () => {
                   </Typography>
                   <Grid2 container display="flex" justifyContent="flex-start" spacing={1} mt={1}>
                     <Grid2 size={{ xs: 16, md: 4 }} display="contents" justifyContent="right">
-                      <StyledButton onClick={() => console.log("download")}>
+                      <StyledButton 
+                        onClick={() => window.open(CV, "_blank")} // Abre o PDF em uma nova aba
+                      >
                         <FileDownloadIcon />
                         <Typography>Download CV</Typography>
                       </StyledButton>
@@ -84,7 +86,6 @@ const Hero = () => {
         </Box>
       </StyledHero>
     );
-    
 };
 
 export default Hero;
