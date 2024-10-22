@@ -1,4 +1,4 @@
-import { Box, Container, Grid2, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material"; // Alterado para importar Grid do MUI
 import { styled } from "@mui/system";
 
 // Importando os ícones diretamente
@@ -18,14 +18,14 @@ import microIcon from './expertise/micro.png';
 import physioIcon from './expertise/physio.png';
 
 const Skills = () => {
-  const StyledSkills = styled("div")(({ theme }) => ({
+  const StyledSkills = styled("div")({
     backgroundColor: "#000",
     minHeight: "100vh",
     display: "flex",
     alignItems: "center",
     paddingTop: "100px",
     paddingBottom: "100px",
-  }));
+  });
 
   const SkillBox = styled(Box)(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
@@ -67,97 +67,97 @@ const Skills = () => {
           Skills
         </Typography>
 
-        <Grid2 container spacing={4}>
+        <Grid container spacing={4}>
           {/* Habilidades técnicas */}
-          <Grid2 size={{ xs: 12, md: 6 }} display="flex" flexDirection="column" alignItems="center">
+          <Grid item xs={12} md={6} display="flex" flexDirection="column" alignItems="center">
             <Typography variant="h4" color="primary.contrastText" gutterBottom sx={{ fontFamily: 'Nexa', marginBottom: '16px', textAlign: 'center', fontSize: '28px' }}>
               Technical Skills
             </Typography>
-            <Grid2 container spacing={3} justifyContent="center">
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+            <Grid container spacing={3} justifyContent="center">
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={pythonIcon} alt="Python" width="50" height="50" />
                   <span>Python</span>
                 </SkillBox>
-              </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={rIcon} alt="R" width="50" height="50" />
                   <span>R</span>
                 </SkillBox>
-              </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={perlIcon} alt="Perl" width="50" height="50" />
                   <span>Perl</span>
                 </SkillBox>
-              </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={sqlIcon} alt="SQL" width="50" height="50" />
                   <span>SQL</span>
                 </SkillBox>
-              </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={scrumIcon} alt="Scrum" width="50" height="50" />
                   <span>Scrum</span>
                 </SkillBox>
-              </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={machineIcon} alt="Machine Learning" width="50" height="50" />
                   <span>Machine Learning</span>
                 </SkillBox>
-              </Grid2>
-            </Grid2>
-          </Grid2>
+              </Grid>
+            </Grid>
+          </Grid>
 
           {/* Tópicos de conhecimento */}
-          <Grid2 size={{ xs: 12, md: 6 }} display="flex" flexDirection="column" alignItems="center">
+          <Grid item xs={12} md={6} display="flex" flexDirection="column" alignItems="center">
             <Typography variant="h4" color="primary.contrastText" gutterBottom sx={{ fontFamily: 'Nexa', marginBottom: '16px', textAlign: 'center', fontSize: '28px' }}>
               Expertise Topics
             </Typography>
-            <Grid2 container spacing={3} justifyContent="center">
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+            <Grid container spacing={3} justifyContent="center">
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={biostatsIcon} alt="Biostatistics" width="50" height="50" />
                   <span>Biostatistics</span>
                 </SkillBox>
-              </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={computIcon} alt="Computational Biology" width="50" height="50" />
                   <span>Computational Biology</span>
                 </SkillBox>
-              </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={physioIcon} alt="Physiology & Behavior" width="50" height="50" />
                   <span>Physiology & Behavior</span>
                 </SkillBox>
-              </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={enviIcon} alt="Environmental Science" width="50" height="50" />
                   <span>Environmental Science</span>
                 </SkillBox>
-              </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={microIcon} alt="Microbiology" width="50" height="50" />
                   <span>Microbiology</span>
                 </SkillBox>
-              </Grid2>
-              <Grid2 size={{ xs: 12, sm: 6 }}>
+              </Grid>
+              <Grid item xs={12} sm={6}>
                 <SkillBox>
                   <img src={forensicIcon} alt="Forensic Biology" width="50" height="50" />
                   <span>Forensic Biology</span>
                 </SkillBox>
-              </Grid2>
-            </Grid2>
-          </Grid2>
-        </Grid2>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
       </Container>
     </StyledSkills>
   );

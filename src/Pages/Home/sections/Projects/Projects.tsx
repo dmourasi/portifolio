@@ -3,14 +3,14 @@ import { styled } from "@mui/system";
 
 const Projects = () => {
   // Estilo principal da seção de Projects
-  const StyledProjects = styled("div")(({ theme }) => ({
+  const StyledProjects = styled("div")({
     backgroundColor: "#000", // Fundo preto
     minHeight: "100vh",
     display: "flex",
     alignItems: "center",
     paddingTop: "100px",
     paddingBottom: "100px",
-  }));
+  });
 
   // Estilo dos cartões de projetos
   const ProjectCard = styled(Box)(({ theme }) => ({
@@ -26,18 +26,18 @@ const Projects = () => {
     },
   }));
 
-  const ProjectTitle = styled(Typography)(({ theme }) => ({
+  const ProjectTitle = styled(Typography)({
     fontFamily: 'Nexa',
     fontSize: "22px",
     fontWeight: "bold",
     marginBottom: "10px",
-  }));
+  });
 
-  const ProjectDescription = styled(Typography)(({ theme }) => ({
+  const ProjectDescription = styled(Typography)({
     fontFamily: 'Avenir Next',
     fontSize: "16px",
     marginBottom: "15px",
-  }));
+  });
 
   return (
     <StyledProjects>
@@ -98,8 +98,6 @@ const Projects = () => {
               </Button>
             </ProjectCard>
           </Grid2>
-
-
 
           {/* Cartão de Projeto 3 */}
           <Grid2 size={{ xs: 12, md: 6 }}>

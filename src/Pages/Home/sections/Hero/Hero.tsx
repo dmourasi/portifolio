@@ -3,7 +3,6 @@ import Avatar from "../../../../assets/imagens/avatar.jpg";
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../compoents/StyledButton/StyledButton";
-import { AnimatedBackground } from "../../../../compoents/AnimatedBackgroud/AnimatedBackgound";
 import CV from './Daniel_CV_EN.pdf';
 
 const Hero = () => {
@@ -19,12 +18,6 @@ const Hero = () => {
         [theme.breakpoints.up('md')]:{
           paddingTop: "0"
         }
-    }));
-    
-    const StyledImg = styled("img")(({theme}) => ({
-        width: "80%",
-        borderRadius: "0%",
-        border: `1px solid ${theme.palette.primary.contrastText}`
     }));
 
     return (

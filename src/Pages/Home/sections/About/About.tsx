@@ -4,7 +4,7 @@ import Avatar from "../../../../assets/imagens/photo.jpg";
 import StyledButton from "../../../../compoents/StyledButton/StyledButton";
 
 const AboutMe = () => {
-  const StyledAboutMe = styled("div")(({ theme }) => ({
+  const StyledAboutMe = styled("div")(() => ({
     backgroundColor: "#000", // Fundo preto
     minHeight: "100vh",
     display: "flex",
@@ -16,7 +16,7 @@ const AboutMe = () => {
   const StyledImg = styled("img")(({ theme }) => ({
     width: "80%",
     borderRadius: "50%",
-    border: `5px solid ${theme.palette.primary.main}`,
+    border: `5px solid ${theme.palette.primary.main}`, // Mantendo o uso do theme aqui
   }));
 
   return (
@@ -40,9 +40,14 @@ const AboutMe = () => {
             {/* Texto "About Me" */}
             <Grid2 size={{ xs: 12, md: 8 }} display="flex" alignItems="center">
               <Box>
-              <Typography variant="h2" color="#4F4F4F" sx={{ fontFamily: 'Playfair Display', fontWeight: 'medium' }} gutterBottom>
-                About Me
-              </Typography>
+                <Typography
+                  variant="h2"
+                  color="#4F4F4F"
+                  sx={{ fontFamily: 'Playfair Display', fontWeight: 'medium' }}
+                  gutterBottom
+                >
+                  About Me
+                </Typography>
                 <Typography
                   variant="body1"
                   color="primary.contrastText" // Cor clara para texto em fundo escuro
@@ -58,7 +63,7 @@ const AboutMe = () => {
                 <Typography
                   variant="body1"
                   color="primary.contrastText" // Cor clara para texto em fundo escuro
-                  sx={{ fontFamily: 'Avenir Next', fontSize: '20px', lineHeight: '1.6',  textAlign: 'justify' }}
+                  sx={{ fontFamily: 'Avenir Next', fontSize: '20px', lineHeight: '1.6', textAlign: 'justify' }}
                 >
                   In addition to my technical expertise, I am highly committed to research in environmental impact, health risk assessment
                   and genomics. I believe in the power of data to drive meaningful change, whether it’s in precision medicine,
@@ -95,7 +100,6 @@ const AboutMe = () => {
                   </Grid2>
                 </Grid2>
 
-
                 {/* Ícones de redes sociais com tamanho maior */}
                 <Box mt={4} display="flex" justifyContent="center" alignItems="center">
                   <IconButton
@@ -129,7 +133,6 @@ const AboutMe = () => {
                     <GitHub sx={{ fontSize: "40px" }} />
                   </IconButton>
                 </Box>
-
               </Box>
             </Grid2>
           </Grid2>
