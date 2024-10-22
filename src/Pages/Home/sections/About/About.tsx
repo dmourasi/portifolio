@@ -40,13 +40,13 @@ const AboutMe = () => {
             {/* Texto "About Me" */}
             <Grid2 size={{ xs: 12, md: 8 }} display="flex" alignItems="center">
               <Box>
-                <Typography variant="h2" color="primary.main" sx={{ fontFamily: 'Nexa' }} gutterBottom>
-                  About Me
-                </Typography>
+              <Typography variant="h2" color="#4F4F4F" sx={{ fontFamily: 'Playfair Display', fontWeight: 'medium' }} gutterBottom>
+                About Me
+              </Typography>
                 <Typography
                   variant="body1"
                   color="primary.contrastText" // Cor clara para texto em fundo escuro
-                  sx={{ fontFamily: 'Avenir Next', fontSize: '18px', lineHeight: '1.6' }}
+                  sx={{ fontFamily: 'Avenir Next', fontSize: '20px', textAlign: 'justify' }}
                 >
                   I am Daniel Moura, a passionate Data Scientist and Bioinformatician with extensive experience in applying
                   data science methodologies to biological and environmental datasets. With a strong background in forensic science,
@@ -58,7 +58,7 @@ const AboutMe = () => {
                 <Typography
                   variant="body1"
                   color="primary.contrastText" // Cor clara para texto em fundo escuro
-                  sx={{ fontFamily: 'Avenir Next', fontSize: '18px', lineHeight: '1.6', marginTop: '16px' }}
+                  sx={{ fontFamily: 'Avenir Next', fontSize: '20px', lineHeight: '1.6',  textAlign: 'justify' }}
                 >
                   In addition to my technical expertise, I am highly committed to research in environmental impact, health risk assessment
                   and genomics. I believe in the power of data to drive meaningful change, whether it’s in precision medicine,
