@@ -30,13 +30,13 @@ const NaviBar = () => {
     },
   }));
 
-  const handleScroll = (id) => {
+  function handleScroll({ id }: { id: any; }) {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
       setDrawerOpen(false); // Fecha o Drawer ao selecionar um item
     }
-  };
+  }
 
   return (
     <>
@@ -54,9 +54,9 @@ const NaviBar = () => {
 
           {/* Menu items para telas maiores */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <StyledMenuItem onClick={() => handleScroll("about")}>About</StyledMenuItem>
-            <StyledMenuItem onClick={() => handleScroll("skills")}>Skills</StyledMenuItem>
-            <StyledMenuItem onClick={() => handleScroll("projects")}>Projects</StyledMenuItem>
+            <StyledMenuItem onClick={() => handleScroll({ id: "about" })}>About</StyledMenuItem>
+            <StyledMenuItem onClick={() => handleScroll({ id: "skills" })}>Skills</StyledMenuItem>
+            <StyledMenuItem onClick={() => handleScroll({ id: "projects" })}>Projects</StyledMenuItem>
           </Box>
         </StyledToolbar>
       </AppBar>
@@ -74,9 +74,9 @@ const NaviBar = () => {
           onClick={() => setDrawerOpen(false)}
           onKeyDown={() => setDrawerOpen(false)}
         >
-          <StyledMenuItem onClick={() => handleScroll("about")}>About</StyledMenuItem>
-          <StyledMenuItem onClick={() => handleScroll("skills")}>Skills</StyledMenuItem>
-          <StyledMenuItem onClick={() => handleScroll("projects")}>Projects</StyledMenuItem>
+          <StyledMenuItem onClick={() => handleScroll({ id: "about" })}>About</StyledMenuItem>
+          <StyledMenuItem onClick={() => handleScroll({ id: "skills" })}>Skills</StyledMenuItem>
+          <StyledMenuItem onClick={() => handleScroll({ id: "projects" })}>Projects</StyledMenuItem>
         </Box>
       </Drawer>
     </>
