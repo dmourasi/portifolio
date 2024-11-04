@@ -39,7 +39,7 @@ const AboutMe = () => {
             </Grid2>
 
             {/* Texto "About Me" */}
-            <Grid2 xs={12} md={8} display="flex" flexDirection="column" alignItems="flex-start">
+            <Grid2 xs={12} md={8} display="flex" flexDirection="column" alignItems="center">
               <Typography
                 variant="h2"
                 color="#4F4F4F"
