@@ -1,6 +1,6 @@
 import { Box, Container, Grid, styled, Typography, IconButton } from "@mui/material";
 import Avatar from "../../../../assets/imagens/photo.jpg";
-import StyledButton from "../../../../components/StyledButton/StyledButton";
+import StyledButton from "../../../../compoents/StyledButton/StyledButton";
 import { Instagram, LinkedIn, GitHub } from "@mui/icons-material";
 
 const AboutMe = () => {
@@ -17,11 +17,7 @@ const AboutMe = () => {
   const StyledImg = styled("img")(({ theme }) => ({
     width: "80%",
     borderRadius: "50%",
-    border: `5px solid ${theme.palette.primary.main}`,
-    // Remove qualquer efeito de zoom ou transformação no hover
-    "&:hover": {
-      transform: "none",
-    },
+    border: `5px solid ${theme.palette.primary.main}`, // Mantendo o uso do theme aqui
   }));
 
   return (
@@ -54,7 +50,7 @@ const AboutMe = () => {
               </Typography>
               <Typography
                 variant="body1"
-                color="primary.contrastText"
+                color="primary.contrastText" // Cor clara para texto em fundo escuro
                 sx={{ fontFamily: 'Avenir Next', fontSize: '20px', textAlign: 'left' }}
               >
                 I am Daniel Moura, a passionate Data Scientist and Bioinformatician with extensive experience in applying data science methodologies to biological and environmental 
