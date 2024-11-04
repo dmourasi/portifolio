@@ -60,28 +60,31 @@ const AboutMe = () => {
               {/* Botões responsivos com espaçamento adicional */}
               <Grid container spacing={2} mt={4} sx={{ flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'center' }}>
                 <Grid item xs={12} sm={4} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
-                  <StyledButton
-                    onClick={() => window.open("https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4447453D6", "_blank")}
-                    sx={{ minWidth: '150px' }}
-                  >
-                    <Typography>Curriculo Lattes</Typography>
-                  </StyledButton>
+                  <Box sx={{ minWidth: '150px' }}>
+                    <StyledButton
+                      onClick={() => window.open("https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4447453D6", "_blank")}
+                    >
+                      <Typography>Curriculo Lattes</Typography>
+                    </StyledButton>
+                  </Box>
                 </Grid>
                 <Grid item xs={12} sm={4} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
-                  <StyledButton
-                    onClick={() => window.open("https://scholar.google.com/citations?user=WBGFXcUAAAAJ&hl=pt-BR", "_blank")}
-                    sx={{ minWidth: '150px' }}
-                  >
-                    <Typography>Google Scholar</Typography>
-                  </StyledButton>
+                  <Box sx={{ minWidth: '150px' }}>
+                    <StyledButton
+                      onClick={() => window.open("https://scholar.google.com/citations?user=WBGFXcUAAAAJ&hl=pt-BR", "_blank")}
+                    >
+                      <Typography>Google Scholar</Typography>
+                    </StyledButton>
+                  </Box>
                 </Grid>
                 <Grid item xs={12} sm={4} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
-                  <StyledButton
-                    onClick={() => window.open("https://www.webofscience.com/wos/author/record/P-2744-2018", "_blank")}
-                    sx={{ minWidth: '150px' }}
-                  >
-                    <Typography>Web of Science</Typography>
-                  </StyledButton>
+                  <Box sx={{ minWidth: '150px' }}>
+                    <StyledButton
+                      onClick={() => window.open("https://www.webofscience.com/wos/author/record/P-2744-2018", "_blank")}
+                    >
+                      <Typography>Web of Science</Typography>
+                    </StyledButton>
+                  </Box>
                 </Grid>
               </Grid>
 
