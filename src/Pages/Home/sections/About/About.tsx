@@ -53,14 +53,18 @@ const AboutMe = () => {
                 color="primary.contrastText" // Cor clara para texto em fundo escuro
                 sx={{ fontFamily: 'Avenir Next', fontSize: '20px', textAlign: 'left' }}
               >
-                I am Daniel Moura, a passionate Data Scientist and Bioinformatician with extensive experience in applying
-                data science methodologies to biological and environmental datasets...
+                I am Daniel Moura, a passionate Data Scientist and Bioinformatician with extensive experience in applying data science methodologies to biological and environmental 
+                datasets. With a strong background in forensic science, environment and bioinformatics, I have worked on a wide range of projects that involve complex data analysis 
+                and interpretation. My goal is to apply my skills in statistics, machine learning, and bioinformatics to uncover valuable insights from data, contributing to scientific
+                 and healthcare advancements.
+                In addition to my technical expertise, I am highly committed to research in environmental impact, health risk assessment and genomics. I believe in the power of data 
+                to drive meaningful change, whether it’s in precision medicine, environmental sustainability or forensic investigations.
               </Typography>
 
               {/* Botões responsivos com espaçamento adicional */}
               <Grid container spacing={2} mt={4} sx={{ flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'center' }}>
                 <Grid item xs={12} sm={4} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
-                  <Box sx={{ minWidth: '150px' }}>
+                  <Box sx={{ minWidth: '100px' }}>
                     <StyledButton
                       onClick={() => window.open("https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4447453D6", "_blank")}
                     >
@@ -69,7 +73,7 @@ const AboutMe = () => {
                   </Box>
                 </Grid>
                 <Grid item xs={12} sm={4} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
-                  <Box sx={{ minWidth: '150px' }}>
+                  <Box sx={{ minWidth: '100px' }}>
                     <StyledButton
                       onClick={() => window.open("https://scholar.google.com/citations?user=WBGFXcUAAAAJ&hl=pt-BR", "_blank")}
                     >
@@ -78,7 +82,7 @@ const AboutMe = () => {
                   </Box>
                 </Grid>
                 <Grid item xs={12} sm={4} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
-                  <Box sx={{ minWidth: '150px' }}>
+                  <Box sx={{ minWidth: '100px' }}>
                     <StyledButton
                       onClick={() => window.open("https://www.webofscience.com/wos/author/record/P-2744-2018", "_blank")}
                     >
