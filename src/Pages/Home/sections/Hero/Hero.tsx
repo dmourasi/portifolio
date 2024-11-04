@@ -32,7 +32,7 @@ const Hero = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <Container maxWidth="lg" sx={{ height: "100%" }}>
+        <Container maxWidth="lg" sx={{ minHeight: "100%", display: "flex", alignItems: "center" }}>
           <Grid container spacing={2} sx={{ height: "90%" }}>
             <Grid
               item xs={12} md={7}

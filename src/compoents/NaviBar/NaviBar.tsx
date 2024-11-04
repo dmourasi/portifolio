@@ -1,72 +1,83 @@
-import { AppBar, MenuItem, styled, Toolbar, IconButton, Drawer, List, ListItem, ListItemText } from "@mui/material";
+import { AppBar, MenuItem, styled, Toolbar, IconButton, Drawer, Box } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from 'react';
+import { useState } from "react";
 
 const NaviBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const StyledToolbar = styled(Toolbar)(() => ({
+  const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
     minHeight: "40px",
     padding: "0 20px",
     marginBottom: "-10px",
     boxShadow: "none",
-  }));
+    [theme.breakpoints.down('sm')]: {
+      justifyContent: "space-between", // Alinha para ícone de menu
+      padding: "10px 20px",
+    },
+  })); 
 
-  const StyledMenuItem = styled(MenuItem)(() => ({
+  const StyledMenuItem = styled(MenuItem)(({ theme }) => ({
     fontSize: "16px",
     padding: "6px 70px",
     '&:hover': {
       backgroundColor: "#464646",
-    }
+    },
+    [theme.breakpoints.down('sm')]: {
+      padding: "10px 20px", // Ajusta o padding em telas menores
+      fontSize: "14px",
+    },
   }));
 
-  const handleScroll = (id: string) => {
+  const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      setDrawerOpen(false); // Fecha o Drawer ao selecionar um item
     }
-    setIsOpen(false); // Fecha o drawer após a seleção
   };
 
   return (
     <>
       <AppBar position="absolute">
         <StyledToolbar>
+          {/* Menu para abrir o Drawer no mobile */}
           <IconButton
-            edge="start"
             color="inherit"
-            aria-label="menu"
-            onClick={() => setIsOpen(true)}
-            sx={{ display: { xs: "block", md: "none" } }} // Mostra apenas em telas pequenas
+            edge="start"
+            onClick={() => setDrawerOpen(true)}
+            sx={{ display: { xs: "block", md: "none" } }} // Mostra só em telas pequenas
           >
             <MenuIcon />
           </IconButton>
-          <StyledMenuItem onClick={() => handleScroll("about")} sx={{ display: { xs: "none", md: "block" } }}>
-            About
-          </StyledMenuItem>
-          <StyledMenuItem onClick={() => handleScroll("skills")} sx={{ display: { xs: "none", md: "block" } }}>
-            Skills
-          </StyledMenuItem>
-          <StyledMenuItem onClick={() => handleScroll("projects")} sx={{ display: { xs: "none", md: "block" } }}>
-            Projects
-          </StyledMenuItem>
+
+          {/* Menu items para telas maiores */}
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <StyledMenuItem onClick={() => handleScroll("about")}>About</StyledMenuItem>
+            <StyledMenuItem onClick={() => handleScroll("skills")}>Skills</StyledMenuItem>
+            <StyledMenuItem onClick={() => handleScroll("projects")}>Projects</StyledMenuItem>
+          </Box>
         </StyledToolbar>
       </AppBar>
 
-      <Drawer anchor="left" open={isOpen} onClose={() => setIsOpen(false)}>
-        <List>
-          <ListItem button onClick={() => handleScroll("about")}>
-            <ListItemText primary="About" />
-          </ListItem>
-          <ListItem button onClick={() => handleScroll("skills")}>
-            <ListItemText primary="Skills" />
-          </ListItem>
-          <ListItem button onClick={() => handleScroll("projects")}>
-            <ListItemText primary="Projects" />
-          </ListItem>
-        </List>
+      {/* Drawer para dispositivos móveis */}
+      <Drawer
+        anchor="left"
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+        sx={{ display: { xs: "block", md: "none" } }}
+      >
+        <Box
+          sx={{ width: 250 }}
+          role="presentation"
+          onClick={() => setDrawerOpen(false)}
+          onKeyDown={() => setDrawerOpen(false)}
+        >
+          <StyledMenuItem onClick={() => handleScroll("about")}>About</StyledMenuItem>
+          <StyledMenuItem onClick={() => handleScroll("skills")}>Skills</StyledMenuItem>
+          <StyledMenuItem onClick={() => handleScroll("projects")}>Projects</StyledMenuItem>
+        </Box>
       </Drawer>
     </>
   );
