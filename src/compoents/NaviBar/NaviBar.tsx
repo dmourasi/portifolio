@@ -37,12 +37,12 @@ const NaviBar = () => {
   }));
 
   // Estilizando o Drawer
-  const StyledDrawer = styled(Drawer)(({ theme }) => ({
+  const StyledDrawer = styled(Drawer)({
     '& .MuiDrawer-paper': {
       backgroundColor: "#333333", // Cor de fundo do Drawer (cinza escuro)
       color: "white", // Cor do texto do Drawer
     },
-  }));
+  });
 
   function handleScroll({ id }: { id: any; }) {
     const section = document.getElementById(id);
