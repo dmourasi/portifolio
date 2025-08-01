@@ -1,5 +1,5 @@
 import { Box, Container, Grid, styled, Typography, IconButton } from "@mui/material";
-import Avatar from "../../../../assets/imagens/photo.jpg";
+import Avatar from "../../../../assets/imagens/photo.png";
 import StyledButton from "../../../../compoents/StyledButton/StyledButton";
 import { Instagram, LinkedIn, GitHub } from "@mui/icons-material";
 
