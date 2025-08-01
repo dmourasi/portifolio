@@ -89,7 +89,7 @@ const Hero = () => {
                     </StyledButton>
                   </Grid>
                   <Grid item xs={12} md={6} display="flex" justifyContent="flex-start">
-                    <StyledButton onClick={() => console.log("contact")}>
+                    <StyledButton onClick={() => window.location.href = "mailto:dmouraslv@gmail.com"}>
                       <MailOutlineIcon />
                       <Typography>Contact me</Typography>
                     </StyledButton>
