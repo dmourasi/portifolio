@@ -2,6 +2,10 @@ import { Box, Container, Grid, styled, Typography, IconButton } from "@mui/mater
 import Avatar from "../../../../assets/imagens/photo.png";
 import StyledButton from "../../../../compoents/StyledButton/StyledButton";
 import { Instagram, LinkedIn, GitHub } from "@mui/icons-material";
+import OrcidIcon from './icon/orcid.png';
+import MediumIcon from './icon/medium.png';
+
+
 
 const AboutMe = () => {
   const StyledAboutMe = styled("div")(() => ({
@@ -93,7 +97,7 @@ const AboutMe = () => {
               </Grid>
 
               {/* Ícones de redes sociais com tamanho maior */}
-              <Box mt={4} display="flex" justifyContent="center" alignItems="center">
+              <Box mt={4} display="flex" justifyContent="center" alignItems="center" gap={1}>
                 <IconButton
                   color="primary"
                   href="https://www.instagram.com/daniel_forense/"
@@ -124,6 +128,44 @@ const AboutMe = () => {
                 >
                   <GitHub sx={{ fontSize: "40px" }} />
                 </IconButton>
+                <IconButton
+                  color="primary"
+                  href="https://orcid.org/0000-0002-5800-8190"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="ORCID"
+                >
+                <Box
+                  component="img"
+                  src={OrcidIcon}
+                  alt="ORCID"
+                  sx={{
+                    width: 32,
+                    height: 32,
+                    opacity: 0.6,
+                    transition: 'opacity 0.3s',
+                    '&:hover': { opacity: 1 }  }}
+                />
+                </IconButton>
+                <IconButton
+                color="primary"
+                href="https://medium.com/@dmouraslv"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Medium"
+                >
+                <Box
+                  component="img"
+                  src={MediumIcon}
+                  alt="Medium"
+                  sx={{
+                    width: 32,
+                    height: 32,
+                    opacity: 0.6,
+                    transition: 'opacity 0.3s',
+                    '&:hover': { opacity: 1 } }}
+                />
+              </IconButton>
               </Box>
             </Grid>
           </Grid>
