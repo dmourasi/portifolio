@@ -57,12 +57,14 @@ const AboutMe = () => {
                 color="primary.contrastText" // Cor clara para texto em fundo escuro
                 sx={{ fontFamily: 'Avenir Next', fontSize: '20px', textAlign: 'left' }}
               >
-                I am Daniel Moura, a passionate Data Scientist and Bioinformatician with extensive experience in applying data science methodologies to biological and environmental 
-                datasets. With a strong background in forensic science, environment and bioinformatics, I have worked on a wide range of projects that involve complex data analysis 
-                and interpretation. My goal is to apply my skills in statistics, machine learning, and bioinformatics to uncover valuable insights from data, contributing to scientific
-                 and healthcare advancements.
-                In addition to my technical expertise, I am highly committed to research in environmental impact, health risk assessment and genomics. I believe in the power of data 
-                to drive meaningful change, whether it’s in precision medicine, environmental sustainability or forensic investigations.
+                I am Daniel Moura, a Data Scientist and Bioinformatician dedicated to uncovering insights from complex biological and environmental datasets. 
+                My academic and professional journey bridges forensic science, bioinformatics, and environmental research, allowing me to approach problems from a truly interdisciplinary perspective.
+
+                I specialize in statistical modeling and machine learning, applying these methods to analyze biological variables such as environmental factors, genetic data, and biomarkers. 
+                Over the years, I have contributed to projects that range from healthcare applications in precision medicine to ecological risk analysis of polluted rivers, always with the goal of translating data into knowledge that drives meaningful decisions.
+
+                Beyond technical expertise, I am deeply committed to scientific research and innovation, with a focus on health risk assessment, environmental sustainability, forensic science, and bioinformatics. 
+                I believe that data, when analyzed with rigor and purpose, has the power to transform science and society.
               </Typography>
 
               {/* Botões responsivos com espaçamento adicional */}

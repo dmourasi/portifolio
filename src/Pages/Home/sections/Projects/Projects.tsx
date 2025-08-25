@@ -100,9 +100,9 @@ const Projects = () => {
           {/* Cartão de Projeto 3 */}
           <Grid2 size={{ xs: 12, md: 6 }}>
             <ProjectCard>
-              <ProjectTitle>Side Project: Trend Analysis of Rainfall Patterns in the Mesoregions of Pernambuco and Paraíba, Brazil</ProjectTitle>
+              <ProjectTitle>Side Project: Mapping and Predicting Risk of Crimes Against Indigenous Peoples in Brazil: Spatial Patterns, Structural Breaks and Machine Learning</ProjectTitle>
               <ProjectDescription>
-              This project analyzes rainfall trends on annual, seasonal, and monthly scales in the mesoregions of Pernambuco and Paraíba. Based on precipitation data collected from 1995 to 2020 by meteorological stations, the study applies the Mann-Kendall test to detect trends and Sen’s slope estimator to determine trend magnitudes. Research conducted in partnership with the Federal Rural University of Pernambuco (UFRPE).
+              This project analyzes spatial and temporal patterns of crimes against Indigenous peoples in Brazil. Crime records aggregated by year, state, and municipality were processed with statistical and geospatial methods to identify structural breaks and spatial clusters. The study also applies machine learning models, using environmental and anthropic predictors, to estimate and map future risks. Research conducted in partnership with the Federal Rural University of Pernambuco (UFRPE).
               </ProjectDescription>
               <Button 
                 variant="contained" 
