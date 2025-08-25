@@ -52,22 +52,22 @@ const AboutMe = () => {
               >
                 About Me
               </Typography>
-              <Typography
-                variant="body1"
-                color="primary.contrastText" // Cor clara para texto em fundo escuro
-                sx={{ fontFamily: 'Avenir Next', fontSize: '20px', textAlign: 'left' }}
-              >
-                I am Daniel Moura, a Data Scientist and Bioinformatician dedicated to uncovering insights from complex biological and environmental datasets. 
-                My academic and professional journey bridges forensic science, bioinformatics, and environmental research, allowing me to approach problems from a truly interdisciplinary perspective.
+                <Typography
+                  variant="body1"
+                  color="primary.contrastText" // Cor clara para texto em fundo escuro
+                  sx={{ fontFamily: 'Avenir Next', fontSize: '20px', textAlign: 'left' }}
+                >
+                  I am Daniel Moura, a Data Scientist and Bioinformatician dedicated to uncovering insights from complex biological and environmental datasets. 
+                  My academic and professional journey bridges forensic science, bioinformatics, and environmental research, allowing me to approach problems from a truly interdisciplinary perspective.
 
-                I specialize in statistical modeling and machine learning, applying these methods to analyze biological variables such as environmental factors, genetic data, and biomarkers. 
-                Over the years, I have contributed to projects that range from healthcare applications in precision medicine to ecological risk analysis of polluted rivers, always with the goal of translating data into knowledge that drives meaningful decisions.
+                  I specialize in statistical modeling and machine learning, applying these methods to analyze biological variables such as environmental factors, genetic data, and biomarkers. 
+                  Over the years, I have contributed to projects that range from healthcare applications in precision medicine to ecological risk analysis of polluted rivers, always with the goal of translating data into knowledge that drives meaningful decisions.
 
-                Beyond technical expertise, I am deeply committed to scientific research and innovation, with a focus on health risk assessment, environmental sustainability, forensic science, and bioinformatics. 
-                I believe that data, when analyzed with rigor and purpose, has the power to transform science and society.
+                  Beyond technical expertise, I am deeply committed to scientific research and innovation, with a focus on health risk assessment, environmental sustainability, forensic science, and bioinformatics. 
+                  I believe that data, when analyzed with rigor and purpose, has the power to transform science and society.
 
-                In addition to my research and data science work, I also teach Forensic Science, Criminalistics, and Thanatology, training both academic students and technical professionals, including autopsy technicians and thanatopraxists and fostering the next generation of scientists and forensic specialists.
-              </Typography>
+                  In addition to my research and data science work, I also teach Forensic Science, Criminalistics, and Thanatology, training both academic students and technical professionals, including autopsy technicians and thanatopraxists and fostering the next generation of scientists and forensic specialists.
+                </Typography>
 
               {/* Botões responsivos com espaçamento adicional */}
               <Grid container spacing={2} mt={4} sx={{ flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'center' }}>
