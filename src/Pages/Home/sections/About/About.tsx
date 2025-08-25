@@ -65,6 +65,8 @@ const AboutMe = () => {
 
                 Beyond technical expertise, I am deeply committed to scientific research and innovation, with a focus on health risk assessment, environmental sustainability, forensic science, and bioinformatics. 
                 I believe that data, when analyzed with rigor and purpose, has the power to transform science and society.
+
+                In addition to my research and data science work, I also teach Forensic Science, Criminalistics, and Thanatology, training both academic students and technical professionals, including autopsy technicians and thanatopraxists and fostering the next generation of scientists and forensic specialists.
               </Typography>
 
               {/* Botões responsivos com espaçamento adicional */}
