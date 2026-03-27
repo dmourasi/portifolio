@@ -1,5 +1,5 @@
 import { Box, Container, Grid, styled, Typography, IconButton } from "@mui/material";
-import Avatar from "../../../../assets/imagens/photo.png";
+import Avatar from "../../../../assets/imagens/photo.jpg";
 import StyledButton from "../../../../compoents/StyledButton/StyledButton";
 import { Instagram, LinkedIn, GitHub } from "@mui/icons-material";
 import OrcidIcon from './icon/orcid.png';

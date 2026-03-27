@@ -118,9 +118,9 @@ const Projects = () => {
           {/* Cartão de Projeto 4 */}
           <Grid2 size={{ xs: 12, md: 6 }}>
             <ProjectCard>
-              <ProjectTitle>Side Project: Correlation Between Osteosarcopenia and Inflammatory Mediators in Patients: Exploring Pro- and Anti-Inflammatory Biomarkers</ProjectTitle>
+              <ProjectTitle>Side Project: Correlation Between Sarcopenia and Inflammatory Mediators in Patients: Exploring Pro- and Anti-Inflammatory Biomarkers</ProjectTitle>
               <ProjectDescription>
-              This study explores the association between osteosarcopenia and the balance of pro- and anti-inflammatory mediators in patients. It investigates how elevated pro-inflammatory and reduced anti-inflammatory biomarkers may contribute to the development of osteosarcopenia. The findings aim to enhance understanding of the inflammatory pathways involved, potentially guiding future therapeutic strategies for managing inflammation in affected individuals. Research conducted in partnership with the Jundiaí Medical School (FMJ).
+              This study analyzes the correlation between sarcopenia and the systemic imbalance of inflammatory mediators in patients, in partnership with Jundiaí Medical School (FMJ). The research investigates how the synergy between elevated pro-inflammatory cytokines and depleted anti-inflammatory markers contributes to muscle mass loss. By applying statistical modeling to these biomarkers, the project aims to map inflammatory pathways and provide a quantitative basis for future therapeutic strategies in sarcopenia management.
               </ProjectDescription>
               <Button 
                 variant="contained" 
