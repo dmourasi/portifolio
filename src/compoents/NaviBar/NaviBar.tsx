@@ -12,7 +12,7 @@ const NaviBar = () => {
     padding: "0 20px",
     marginBottom: "-10px",
     boxShadow: "none",
-    backgroundColor: "#30000", // Cor de fundo da Navbar (cinza escuro)
+    backgroundColor: "#303030", // Cor de fundo da Navbar (cinza escuro)
     [theme.breakpoints.down('sm')]: {
       padding: "10px 20px",
     },
@@ -28,7 +28,7 @@ const NaviBar = () => {
     alignItems: "center", // Centraliza verticalmente
     color: "white", // Cor do texto
     '&:hover': {
-      backgroundColor: "#464646", // Cor do fundo ao passar o mouse
+      backgroundColor: "#464646",
     },
     [theme.breakpoints.down('sm')]: {
       padding: "10px 0", // Ajusta o padding em telas menores
@@ -54,7 +54,7 @@ const NaviBar = () => {
 
   return (
     <>
-      <AppBar position="absolute">
+      <AppBar position="absolute" elevation={0} sx={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
         <StyledToolbar>
           {/* Menu para abrir o Drawer no mobile */}
           <IconButton
@@ -71,6 +71,7 @@ const NaviBar = () => {
             <StyledMenuItem onClick={() => handleScroll({ id: "about" })}>About</StyledMenuItem>
             <StyledMenuItem onClick={() => handleScroll({ id: "skills" })}>Skills</StyledMenuItem>
             <StyledMenuItem onClick={() => handleScroll({ id: "projects" })}>Projects</StyledMenuItem>
+            <StyledMenuItem onClick={() => handleScroll({ id: "contact" })}>Contact</StyledMenuItem>
           </Box>
         </StyledToolbar>
       </AppBar>
@@ -89,8 +90,9 @@ const NaviBar = () => {
           onKeyDown={() => setDrawerOpen(false)}
         >
           <StyledMenuItem onClick={() => handleScroll({ id: "about" })}>About</StyledMenuItem>
-          <StyledMenuItem onClick={() => handleScroll({ id: "skills" })}>Skills</StyledMenuItem>
+          <StyledMenuItem onClick={() => handleScroll({ id: "skills" })}>Expertises</StyledMenuItem>
           <StyledMenuItem onClick={() => handleScroll({ id: "projects" })}>Projects</StyledMenuItem>
+          <StyledMenuItem onClick={() => handleScroll({ id: "contact" })}>Contact</StyledMenuItem>
         </Box>
       </StyledDrawer>
     </>

@@ -39,6 +39,14 @@ const Projects = () => {
     marginBottom: "15px",
   });
 
+  const ProjectStack = styled(Typography)({
+    fontFamily: 'Avenir Next',
+    fontSize: "13px",
+    color: "rgba(255, 255, 255, 0.55)",
+    marginTop: "12px",
+    letterSpacing: "0.03em",
+  });
+
   return (
     <StyledProjects>
       <Container maxWidth="lg">
@@ -56,17 +64,23 @@ const Projects = () => {
             <ProjectCard>
               <ProjectTitle>Main Project: Risk Assessment of Physical, Chemical, and Biological Factors in the Flow of the Capibaribe River Through Multivariate Analyses</ProjectTitle>
               <ProjectDescription>
-              This study aims to assess the risk associated with physical, chemical, and biological factors in the flow of the Capibaribe River using multivariate analyses. By examining water samples and modeling sediment transport and deposition along different points of the river, the research investigates pollutant accumulation, sediment dynamics, and microbial communities. The focus is on understanding how sediment characteristics influence the distribution of contaminants and their ecological impacts. The goal is to identify areas with high environmental and human health risks, providing insights for better management and conservation strategies, particularly in regions affected by industrial pollution and seasonal changes in sediment flow. Research conducted in partnership with the Federal Rural University of Pernambuco (UFRPE).
+              This study aims to assess the risk associated with physical, chemical, and biological factors in the flow of the Capibaribe River
+              using multivariate analyses. By examining water samples and modeling sediment transport and deposition along different points of the
+              river, the research investigates pollutant accumulation, sediment dynamics, and microbial communities. The focus is on understanding 
+              how sediment characteristics influence the distribution of contaminants and their ecological impacts. The goal is to identify areas with
+              high environmental and human health risks, providing insights for better management and conservation strategies, particularly
+              in regions affected by industrial pollution and seasonal changes in sediment flow. Research conducted in partnership with the Federal Rural 
+              University of Pernambuco (UFRPE).
               </ProjectDescription>
-              <Button 
-                variant="contained" 
-                color="secondary" 
-                sx={{ marginTop: "10px" }}
-                onClick={() => console.log("View Project 1")}
+              <ProjectStack>R · Shiny · vegan · FactoMineR · sf · leaflet · tidyverse</ProjectStack>
+              <Button
+                variant="outlined"
+                disabled
+                sx={{ marginTop: "10px", borderColor: "#2e7d32", color: "#4caf50", opacity: 0.5, cursor: "default", "&.Mui-disabled": { borderColor: "#2e7d32", color: "#4caf50" } }}
               >
-                View More
+                In Progress
               </Button>
-            </ProjectCard>
+            </ProjectCard>            
           </Grid2>
 
           {/* Cartão de Projeto 2 */}
@@ -76,8 +90,14 @@ const Projects = () => {
                 Side Project: Impact of Sleep Patterns, Mood, Light Exposure, and Physical Activity during the COVID-19 Pandemic Isolation
               </ProjectTitle>
               <ProjectDescription>
-                This project investigates the changes in sleep patterns among college students during the isolation period of the COVID-19 pandemic, focusing on the relationship between sleep, mood, physical activity, and light exposure. Through a comparative analysis of two phases of the pandemic, the study explores how students' sleep habits evolved, becoming more morning-oriented by the second year. The research also examines how shifts in sleep schedules are associated with mood variations, daily sunlight exposure, and exercise levels. By understanding these dynamics, the study aims to offer insights into the broader impacts of lifestyle changes prompted by the pandemic’s isolation on students' well-being. Research conducted in partnership with the Federal University of Pernambuco (UFPE).
+                This project investigates the changes in sleep patterns among college students during the isolation period of the COVID-19 pandemic,
+                focusing on the relationship between sleep, mood, physical activity, and light exposure. Through a comparative analysis of two phases
+                of the pandemic, the study explores how students' sleep habits evolved, becoming more morning-oriented by the second year. The research
+                also examines how shifts in sleep schedules are associated with mood variations, daily sunlight exposure, and exercise levels. 
+                By understanding these dynamics, the study aims to offer insights into the broader impacts of lifestyle changes prompted by the pandemic’s 
+                isolation on students' well-being. Research conducted in partnership with the Federal University of Pernambuco (UFPE).
               </ProjectDescription>
+              <ProjectStack>R  · vegan · FactoMineR · sf  · tidyverse</ProjectStack>
               <Button
                 variant="contained"
                 color="secondary"
@@ -102,15 +122,18 @@ const Projects = () => {
             <ProjectCard>
               <ProjectTitle>Side Project: Mapping and Predicting Risk of Crimes Against Indigenous Peoples in Brazil: Spatial Patterns, Structural Breaks and Machine Learning</ProjectTitle>
               <ProjectDescription>
-              This project analyzes spatial and temporal patterns of crimes against Indigenous peoples in Brazil. Crime records aggregated by year, state, and municipality were processed with statistical and geospatial methods to identify structural breaks and spatial clusters. The study also applies machine learning models, using environmental and anthropic predictors, to estimate and map future risks. Research conducted in partnership with the Federal Rural University of Pernambuco (UFRPE).
+              This project analyzes spatial and temporal patterns of crimes against Indigenous peoples in Brazil. Crime records aggregated by year, state,
+              and municipality were processed with statistical and geospatial methods to identify structural breaks and spatial clusters. The study also applies
+              machine learning models, using environmental and anthropic predictors, to estimate and map future risks. Research conducted in partnership with the
+              Federal Rural University of Pernambuco (UFRPE).
               </ProjectDescription>
-              <Button 
-                variant="contained" 
-                color="secondary" 
-                sx={{ marginTop: "10px" }}
-                onClick={() => console.log("View Project 3")}
+              <ProjectStack>R · Python · tidyverse · sf · randomForest · xgboost · sklearn</ProjectStack>
+              <Button
+                variant="outlined"
+                disabled
+                sx={{ marginTop: "10px", borderColor: "#2e7d32", color: "#4caf50", opacity: 0.5, cursor: "default", "&.Mui-disabled": { borderColor: "#2e7d32", color: "#4caf50" } }}
               >
-                View More
+                In Progress
               </Button>
             </ProjectCard>
           </Grid2>
@@ -118,17 +141,22 @@ const Projects = () => {
           {/* Cartão de Projeto 4 */}
           <Grid2 size={{ xs: 12, md: 6 }}>
             <ProjectCard>
-              <ProjectTitle>Side Project: Correlation Between Sarcopenia and Inflammatory Mediators in Patients: Exploring Pro- and Anti-Inflammatory Biomarkers</ProjectTitle>
+              <ProjectTitle>Side Project: Correlation Between Sarcopenia and Inflammatory Mediators in Patients:
+                 Exploring Pro- and Anti-Inflammatory Biomarkers
+              </ProjectTitle>
               <ProjectDescription>
-              This study analyzes the correlation between sarcopenia and the systemic imbalance of inflammatory mediators in patients, in partnership with Jundiaí Medical School (FMJ). The research investigates how the synergy between elevated pro-inflammatory cytokines and depleted anti-inflammatory markers contributes to muscle mass loss. By applying statistical modeling to these biomarkers, the project aims to map inflammatory pathways and provide a quantitative basis for future therapeutic strategies in sarcopenia management.
+              This study analyzes the correlation between sarcopenia and the systemic imbalance of inflammatory mediators in patients, 
+              in partnership with Jundiaí Medical School (FMJ). The research investigates how the synergy between elevated pro-inflammatory 
+              cytokines and depleted anti-inflammatory markers contributes to muscle mass loss. By applying statistical modeling to these biomarkers,
+              the project aims to map inflammatory pathways and provide a quantitative basis for future therapeutic strategies in sarcopenia management.
               </ProjectDescription>
-              <Button 
-                variant="contained" 
-                color="secondary" 
-                sx={{ marginTop: "10px" }}
-                onClick={() => console.log("View Project 4")}
+              <ProjectStack>R · Python · tidyverse · glmnet · randomForest · xgboost · sklearn</ProjectStack>
+              <Button
+                variant="outlined"
+                disabled
+                sx={{ marginTop: "10px", borderColor: "#2e7d32", color: "#4caf50", opacity: 0.5, cursor: "default", "&.Mui-disabled": { borderColor: "#2e7d32", color: "#4caf50" } }}
               >
-                View More
+                In Progress
               </Button>
             </ProjectCard>
           </Grid2>

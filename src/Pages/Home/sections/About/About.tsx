@@ -52,22 +52,31 @@ const AboutMe = () => {
               >
                 About Me
               </Typography>
-                <Typography
-                  variant="body1"
-                  color="primary.contrastText" // Cor clara para texto em fundo escuro
-                  sx={{ fontFamily: 'Avenir Next', fontSize: '20px', textAlign: 'left' }}
-                >
-                  I am Daniel Moura, a Data Scientist and Bioinformatician dedicated to uncovering insights from complex biological and environmental datasets. 
-                  My academic and professional journey bridges forensic science, bioinformatics, and environmental research, allowing me to approach problems from a truly interdisciplinary perspective.
+                <Box sx={{ fontFamily: 'Georgia', fontSize: '20px', textAlign: 'left', color: 'primary.contrastText' }}>
+                  <Typography variant="body1" paragraph={true}>
+                    I am a Data Scientist and Bioinformatician specializing in the intersection of rigorous 
+                    statistical modeling and complex biological, environmental, and forensic datasets. My focus 
+                    is on transforming raw scientific data into robust predictive models, scalable pipelines, and 
+                    actionable insights.
+                  </Typography>
 
-                  I specialize in statistical modeling and machine learning, applying these methods to analyze biological variables such as environmental factors, genetic data, and biomarkers. 
-                  Over the years, I have contributed to projects that range from healthcare applications in precision medicine to ecological risk analysis of polluted rivers, always with the goal of translating data into knowledge that drives meaningful decisions.
+                  <Typography variant="body1" paragraph={true}>
+                    Currently, I am a PhD candidate in Applied Statistics at UFRPE (Brazil), advancing my research 
+                    as a Visiting PhD Researcher at Hokkaido University (Japan). Previously, I earned a Master of 
+                    Science from Ghent University (Belgium) and a Bachelor's degree from UFPE (Brazil), which 
+                    included studies at Eötvös Loránd University (Hungary).
+                  </Typography>
 
-                  Beyond technical expertise, I am deeply committed to scientific research and innovation, with a focus on health risk assessment, environmental sustainability, forensic science, and bioinformatics. 
-                  I believe that data, when analyzed with rigor and purpose, has the power to transform science and society.
-
-                  In addition to my research and data science work, I also teach Forensic Science, Criminalistics, and Thanatology, training both academic students and technical professionals, including autopsy technicians and thanatopraxists and fostering the next generation of scientists and forensic specialists.
-                </Typography>
+                  <Typography variant="body1">
+                    Technically, my data stack is deeply anchored in R and Python. I specialize in building 
+                    reproducible research workflows and applying advanced analytical frameworks, including machine 
+                    learning architectures, multivariate statistics, spatial modeling, and structural equation 
+                    modeling (SEM). Recently, I have expanded my analytical infrastructure to include LLM integrations
+                    and autonomous AI agents, enabling advanced workflow automation and intelligent data retrieval.
+                    I leverage this combined toolset to solve high-complexity data problems across life sciences, 
+                    environmental sciences, forensic biology, and biostatistics.
+                  </Typography>
+                </Box>
 
               {/* Botões responsivos com espaçamento adicional */}
               <Grid container spacing={2} mt={4} sx={{ flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'center' }}>

@@ -1,9 +1,7 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material";
 import Avatar from "../../../../assets/imagens/avatar.jpg";
-import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../compoents/StyledButton/StyledButton";
-import CV from './Daniel_CV_EN.pdf';
 
 const Hero = () => {
   const StyledHero = styled("div")(({ theme }) => ({
@@ -41,24 +39,14 @@ const Hero = () => {
               alignItems="center"
             >
               <Box>
-                <Box sx={{ display: 'flex', alignItems: 'baseline' }}>
-                  <Typography
-                    color="primary.contrastText"
-                    variant="h6"
-                    textAlign="left"
-                    sx={{ fontFamily: 'Nexa' }}
-                  >
-                    M.Sc.
-                  </Typography>
-                  <Typography
-                    color="primary.contrastText"
-                    variant="h4"
-                    textAlign="left"
-                    sx={{ fontFamily: 'Nexa', ml: 1 }} // Adicionei margem à esquerda para melhorar o espaçamento
-                  >
-                    Daniel
-                  </Typography>
-                </Box>
+                <Typography
+                  color="primary.contrastText"
+                  variant="h4"
+                  textAlign="left"
+                  sx={{ fontFamily: 'Nexa', mb: 0.5 }}
+                >
+                  Daniel Moura
+                </Typography>
                 <Typography
                   color="primary.contrastText"
                   variant="h1"
@@ -66,35 +54,48 @@ const Hero = () => {
                   fontWeight="bold"
                   sx={{
                     fontFamily: 'Avenir Next',
-                    fontSize: { xs: '3rem', md: '5rem' }, // Tamanho dinâmico da fonte
+                    fontSize: { xs: '2rem', md: '3.2rem' },
+                    mb: 1,
                   }}
                 >
-                  Moura
+                  Data Scientist & Biostatistician
                 </Typography>
                 <Typography
                   color="primary.contrastText"
-                  variant="h6"
+                  variant="body1"
                   textAlign="left"
                   sx={{
-                    fontSize: { xs: '1rem', md: '1.5rem' }, // Ajuste da fonte no mobile
+                    fontSize: { xs: '0.95rem', md: '1.15rem' },
+                    mb: 2,
+                    maxWidth: '520px',
                   }}
                 >
-                  Data Scientist and Bioinformatician
+                  Statistical modeling and bioinformatics applied
+                  to health and the environment. 
+                  Biologist and PhD candidate in Applied Statistics.
                 </Typography>
                 <Grid container spacing={1} mt={1}>
-                  <Grid item xs={12} md={6} display="flex" justifyContent="flex-start">
-                    <StyledButton onClick={() => window.open(CV, "_blank")}>
-                      <FileDownloadIcon />
-                      <Typography>Download CV</Typography>
+                  <Grid item xs={12} md="auto" display="flex" justifyContent="flex-start">
+                    <StyledButton onClick={() => {
+                      document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+                    }}>
+                      <Typography>View Projects</Typography>
                     </StyledButton>
                   </Grid>
-                  <Grid item xs={12} md={6} display="flex" justifyContent="flex-start">
-                    <StyledButton onClick={() => window.location.href = "mailto:dmouraslv@gmail.com"}>
+                  <Grid item xs={12} md="auto" display="flex" justifyContent="flex-start">
+                    <StyledButton onClick={() => { window.location.href = "mailto:dmouraslv@gmail.com"; }}>
                       <MailOutlineIcon />
-                      <Typography>Contact me</Typography>
+                      <Typography>Hire for Consulting</Typography>
                     </StyledButton>
                   </Grid>
                 </Grid>
+                <Typography
+                  color="primary.contrastText"
+                  variant="caption"
+                  sx={{ mt: 2, display: 'block', opacity: 0.75, letterSpacing: '0.05em' }}
+                >
+                  R · Python · Multivariate Analysis · Bioinformatics · Machine Learning
+                </Typography>
               </Box>
             </Grid>
           </Grid>
